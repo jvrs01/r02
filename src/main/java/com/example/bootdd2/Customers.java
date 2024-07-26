@@ -8,9 +8,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
 
-public class Customers {
-}
-
 @RestController
 //@RequestMapping("/")
 @ResponseBody
