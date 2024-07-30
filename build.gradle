@@ -8,6 +8,8 @@ plugins {
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 
+
+
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(17)
@@ -29,6 +31,25 @@ publishing {
             }
             }
         }
+}
+
+publishing {
+    repositories {
+        maven {
+            name = "r02"
+            url = uri("https://maven.pkg.github.com/jvrs01/r02")
+            credentials {
+                username = project.findProperty("gpr.user") ?: System.getenv("GITHUB_ACTOR")
+                password = project.findProperty("gpr.key") ?: System.getenv("GITHUB_TOKEN")
+            }
+        }
+    }
+    publications {
+        mavenJava(MavenPublication){
+            // bootJar is the default build task configured by Spring Boot
+            artifact bootJar
+        }
+    }
 }
 
 dependencies {

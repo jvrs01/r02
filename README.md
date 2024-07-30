@@ -1,3 +1,5 @@
+https://stackoverflow.com/questions/61500897/gradle-springboot-mavenpublish-publication-only-contains-dependencies-and-or
+
 # Getting Started
 
 ### Reference Documentation
