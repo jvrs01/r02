@@ -36,7 +36,7 @@ publishing {
 publishing {
     repositories {
         maven {
-            name = "r02"
+            name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/jvrs01/r02")
             credentials {
                 username = project.findProperty("gpr.user") ?: System.getenv("GITHUB_ACTOR")
