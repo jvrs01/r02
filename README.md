@@ -1,4 +1,9 @@
 https://stackoverflow.com/questions/61500897/gradle-springboot-mavenpublish-publication-only-contains-dependencies-and-or
+https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-gradle-registry
+https://docs.github.com/en/enterprise-cloud@latest/actions/publishing-packages/publishing-java-packages-with-gradle
+https://medium.com/swlh/devops-with-github-part-1-github-packages-with-gradle-c4253cdf7ca6
+
+curl -X PUT "https://maven.pkg.github.com/jvrs01/r02/ARTEFACT.jar" -H "Authorization: token ghp_***" --upload-file "BootDD2-0.0.1-SNAPSHOT.jar" -vvv
 
 # Getting Started
 
